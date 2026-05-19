@@ -28,27 +28,27 @@ class StockSenseApp extends StatelessWidget {
 }
 
 class MainHomePage extends StatefulWidget {
-  final int initialIndex;
-  const MainHomePage({super.key, this.initialIndex = 0});
+  const MainHomePage({super.key, this.initialTab = 0});
+  final int initialTab;
 
   @override
   State<MainHomePage> createState() => _MainHomePageState();
 }
 
 class _MainHomePageState extends State<MainHomePage> {
-  late int _currentIndex;
+  late int _selectedIndex;
 
   @override
   void initState() {
     super.initState();
-    _currentIndex = widget.initialIndex;
+    _selectedIndex = widget.initialTab;
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: IndexedStack(
-        index: _currentIndex,
+        index: _selectedIndex,
         children: [
           SourcesScreen(onRunAnalysis: () {
             Navigator.of(context).push(
@@ -61,13 +61,13 @@ class _MainHomePageState extends State<MainHomePage> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
+        currentIndex: _selectedIndex,
         selectedItemColor: const Color(0xFF1565C0),
         unselectedItemColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
         onTap: (index) {
           setState(() {
-            _currentIndex = index;
+            _selectedIndex = index;
           });
         },
         items: const [
@@ -1222,9 +1222,11 @@ class _AgentProcessingScreenState extends State<AgentProcessingScreen> with Sing
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
               ),
               onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => const MainHomePage(initialIndex: 1)),
+                Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(
+                    builder: (context) => const MainHomePage(initialTab: 1),
+                  ),
+                  (route) => false,
                 );
               },
               child: const Text("View Full Report →", style: TextStyle(fontWeight: FontWeight.bold)),
