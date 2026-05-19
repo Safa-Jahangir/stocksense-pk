@@ -1,9 +1,9 @@
----
+
 
 # StockSense PK 🇵🇰
 ### Autonomous Inventory Intelligence Agent
 **AI Seekho 2026 Hackathon — Challenge 1**
-"*Autonomous Content-to-Action Agent (Insight → Action System)*"
+*Autonomous Content-to-Action Agent (Insight → Action System)*
 
 ---
 
