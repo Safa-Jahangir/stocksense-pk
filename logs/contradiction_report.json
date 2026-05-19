@@ -1,0 +1,56 @@
+{
+  "conflict_detected": true,
+  "conflict_description": "warehouse_sheet.csv reports sufficient stock while 4 other sources indicate critical shortage",
+  "source_scores": [
+    {
+      "source": "sales_dashboard.json",
+      "date": "2026-05-13",
+      "recency_score": 10,
+      "credibility_score": 10,
+      "final_score": 10.0,
+      "status": "TRUSTED"
+    },
+    {
+      "source": "supplier_email.txt",
+      "date": "2026-05-13",
+      "recency_score": 10,
+      "credibility_score": 9,
+      "final_score": 9.6,
+      "status": "TRUSTED"
+    },
+    {
+      "source": "news_article.txt",
+      "date": "2026-05-13",
+      "recency_score": 10,
+      "credibility_score": 8,
+      "final_score": 9.2,
+      "status": "TRUSTED"
+    },
+    {
+      "source": "customer_complaints.txt",
+      "date": "2026-05-13",
+      "recency_score": 9,
+      "credibility_score": 8,
+      "final_score": 8.6,
+      "status": "TRUSTED"
+    },
+    {
+      "source": "warehouse_sheet.csv",
+      "date": "2026-05-07",
+      "recency_score": 2,
+      "credibility_score": 4,
+      "final_score": 2.8,
+      "status": "OVERRIDDEN"
+    }
+  ],
+  "stale_source": "warehouse_sheet.csv",
+  "stale_reason": "Data is 6 days old, contradicts 4 fresher sources",
+  "resolution": "SHORTAGE_CONFIRMED",
+  "confidence": "HIGH",
+  "affected_skus": [
+    "SKU001",
+    "SKU002"
+  ],
+  "noise_detected": false,
+  "next_agent": "ActionChainAgent"
+}

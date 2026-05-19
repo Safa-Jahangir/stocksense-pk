@@ -1,0 +1,62 @@
+{
+  "project": "StockSense PK",
+  "run_date": "2026-05-13",
+  "scenario": "Critical inventory shortage — SKU001 and SKU002",
+  "execution_summary": {
+    "total_steps": 5,
+    "successful": 4,
+    "failed": 1,
+    "recovered": 1,
+    "skipped": 0
+  },
+  "financial_summary": {
+    "emergency_order_cost_pkr": 481000,
+    "budget_limit_pkr": 500000,
+    "budget_remaining_pkr": 19000,
+    "budget_status": "WITHIN LIMIT",
+    "notification_cost_pkr": 250,
+    "total_operation_cost_pkr": 481250
+  },
+  "latency_summary": {
+    "step1_ms": 320,
+    "step2_ms": 180,
+    "step3_failed_ms": 30000,
+    "step3_recovery_ms": 2100,
+    "step4_ms": 150,
+    "step5_ms": 95,
+    "total_ms": 32845,
+    "total_excluding_failure_ms": 2845
+  },
+  "before_state": {
+    "stockout_risk": "CRITICAL",
+    "primary_supplier": "AVAILABLE",
+    "backup_supplier": "INACTIVE",
+    "customer_notified": false,
+    "monitoring_active": false,
+    "SKU001_stock": 15,
+    "SKU002_stock": 20
+  },
+  "after_state": {
+    "stockout_risk": "LOW",
+    "primary_supplier": "FAILED — UNREACHABLE",
+    "backup_supplier": "ACTIVE — Pak-Fresh Distributors",
+    "customer_notified": true,
+    "monitoring_active": true,
+    "SKU001_stock_incoming": 500,
+    "SKU002_stock_incoming": 300
+  },
+  "robustness_evidence": {
+    "failure_detected": true,
+    "failure_step": 3,
+    "failure_reason": "Al-Noor Traders API timeout",
+    "recovery_action": "Switched to Pak-Fresh Distributors",
+    "recovery_status": "SUCCESS",
+    "data_integrity_maintained": true
+  },
+  "agent_pipeline": [
+    "PlannerAgent",
+    "ContradictionDetectorAgent",
+    "ActionChainAgent",
+    "SummaryAgent"
+  ]
+}

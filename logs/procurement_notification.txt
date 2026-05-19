@@ -1,0 +1,34 @@
+---
+TO: Ahmed Raza (Procurement Manager)
+FROM: StockSense PK — Automated Alert System
+DATE: 2026-05-13
+URGENCY: 🔴 CRITICAL
+
+Subject: Emergency Stock Alert — Immediate Action Required
+
+Dear Ahmed,
+
+Our inventory intelligence system has detected a 
+critical shortage risk for the following SKUs:
+
+- SKU001 — Falak Basmati Rice (25kg)
+  Current Stock: 15 units
+  Reorder Level: 50 units
+  Projected Stockout: Within 2 days
+
+- SKU002 — Mezan Cooking Oil (5L)
+  Current Stock: 20 units  
+  Reorder Level: 80 units
+  Projected Stockout: Within 1 day
+
+Root Cause: Supplier delay (Al-Noor Traders) + 
+M-9 motorway transport disruption + 40% sales spike
+
+Recommended Action: Emergency order required immediately.
+Budget Available: PKR 500,000
+
+Please approve emergency procurement within 2 hours.
+
+Regards,
+StockSense PK Autonomous Agent
+---

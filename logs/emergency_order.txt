@@ -1,0 +1,18 @@
+---
+ORDER CONFIRMATION — SYNTHETIC/SIMULATED
+Supplier: Pak-Fresh Distributors, Hyderabad
+Order ID: ORD-2026-0513-PK
+Date: 2026-05-13
+Status: CONFIRMED
+
+Items:
+- SKU001 Falak Basmati Rice (25kg) — 500 units — PKR 325,000
+- SKU002 Mezan Cooking Oil (5L) — 300 units — PKR 156,000
+
+Total Amount: PKR 481,000
+Budget Limit: PKR 500,000
+Budget Remaining: PKR 19,000 ✅
+
+Delivery ETA: 2 business days
+Contact: pakfresh.orders@synthetic.pk
+---

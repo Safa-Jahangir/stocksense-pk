@@ -1,0 +1,29 @@
+Contradiction Report: StockSense PK
+
+STEP 1 — Timestamp comparison
+1. sales_dashboard.json: 2026-05-13 (Newest)
+2. supplier_email.txt: 2026-05-13
+3. news_article.txt: 2026-05-13
+4. customer_complaints.txt: 2026-05-12 to 2026-05-13
+5. warehouse_sheet.csv: 2026-05-07 (Oldest)
+
+STEP 2 — Credibility weighted scoring
+Formula: final_score = (recency_score * 0.6) + (credibility_score * 0.4)
+- sales_dashboard.json: (10 * 0.6) + (10 * 0.4) = 10.0
+- supplier_email.txt: (10 * 0.6) + (9 * 0.4) = 9.6
+- news_article.txt: (10 * 0.6) + (8 * 0.4) = 9.2
+- customer_complaints.txt: (9 * 0.6) + (8 * 0.4) = 8.6
+- warehouse_sheet.csv: (2 * 0.6) + (4 * 0.4) = 2.8
+
+STEP 3 — Resolution decision
+Contradiction: warehouse_sheet.csv reports sufficient stock while 4 other sources indicate critical shortage.
+warehouse_sheet.csv has the lowest final_score (2.8). 4 newer sources agree on shortage.
+warehouse_sheet.csv is OVERRIDDEN as stale.
+
+STEP 4 — Noise check
+Check if any source looks like spam, rumor, or very low credibility.
+No noise detected.
+
+**VERDICT: CRITICAL SHORTAGE CONFIRMED FOR SKU001 AND SKU002**
+
+Next Agent: The resolution is handed over to the ActionChainAgent to begin mitigating the shortage risk.

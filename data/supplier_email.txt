@@ -1,0 +1,14 @@
+# SYNTHETIC MOCK DATA — AI Seekho 2026 Hackathon
+Date: 2026-05-13
+From: Al-Noor Traders, Karachi (sales@alnoortraders.com.pk)
+To: Procurement Team, StockSense PK
+Subject: URGENT: Delivery Delay Notice
+
+Dear Team,
+
+Please be advised that your upcoming delivery scheduled for tomorrow will be delayed by 5-7 days. There are severe transport issues and roadblocks on the M-9 motorway preventing our trucks from leaving Karachi.
+
+This delay specifically affects your bulk orders of Falak Basmati Rice and Mezan Cooking Oil. We apologize for the inconvenience and will keep you updated as the situation on the highway improves.
+
+Regards,
+Al-Noor Traders, Karachi

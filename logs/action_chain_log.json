@@ -1,0 +1,62 @@
+[
+  {
+    "step": 1,
+    "action_name": "VALIDATE STOCK",
+    "status": "SUCCESS",
+    "timestamp": "2026-05-13T08:37:44+05:00",
+    "state_change": "Calculated critical projected stock for SKU001 and SKU002",
+    "cost_estimate_pkr": 0,
+    "latency_ms": 320,
+    "notes": "Projected stock SKU001: -28, SKU002: -67"
+  },
+  {
+    "step": 2,
+    "action_name": "NOTIFY PROCUREMENT",
+    "status": "SUCCESS",
+    "timestamp": "2026-05-13T08:37:44+05:00",
+    "state_change": "Procurement notification generated",
+    "cost_estimate_pkr": 50,
+    "latency_ms": 180,
+    "notes": "Alert saved to /logs/procurement_notification.txt"
+  },
+  {
+    "step": 3,
+    "action_name": "SIMULATE EMERGENCY ORDER",
+    "status": "FAILED",
+    "timestamp": "2026-05-13T08:37:44+05:00",
+    "state_change": "None",
+    "cost_estimate_pkr": 0,
+    "latency_ms": 30000,
+    "notes": "Al-Noor Traders API timeout"
+  },
+  {
+    "step": 3,
+    "action_name": "SIMULATE EMERGENCY ORDER",
+    "status": "RECOVERED",
+    "timestamp": "2026-05-13T08:37:44+05:00",
+    "state_change": "Order placed with backup supplier",
+    "cost_estimate_pkr": 481000,
+    "latency_ms": 2100,
+    "notes": "Primary supplier failed, recovered via Pak-Fresh Distributors — budget within limit"
+  },
+  {
+    "step": 4,
+    "action_name": "UPDATE DELIVERY ESTIMATES",
+    "status": "SUCCESS",
+    "timestamp": "2026-05-13T08:37:44+05:00",
+    "state_change": "Customer notification generated",
+    "cost_estimate_pkr": 200,
+    "latency_ms": 150,
+    "notes": "Notification saved to /logs/customer_notification.txt"
+  },
+  {
+    "step": 5,
+    "action_name": "SCHEDULE MONITORING",
+    "status": "SUCCESS",
+    "timestamp": "2026-05-13T08:37:44+05:00",
+    "state_change": "Monitoring schedule activated",
+    "cost_estimate_pkr": 0,
+    "latency_ms": 95,
+    "notes": "Monitoring schedule saved to /logs/monitoring_schedule.json"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "monitoring_id": "MON-2026-0513",
+  "created_by": "StockSense PK Action Chain Agent",
+  "target_skus": [
+    "SKU001",
+    "SKU002"
+  ],
+  "check_interval": "every 24 hours",
+  "duration": "7 days",
+  "alert_threshold": {
+    "SKU001": "below 50 units",
+    "SKU002": "below 80 units"
+  },
+  "escalation": "notify Ahmed Raza if threshold breached",
+  "start_date": "2026-05-13",
+  "end_date": "2026-05-20",
+  "status": "ACTIVE"
+}

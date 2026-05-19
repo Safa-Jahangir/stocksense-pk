@@ -1,0 +1,10 @@
+# SYNTHETIC MOCK DATA — AI Seekho 2026 Hackathon
+SKU,product_name,quantity_on_hand,last_updated,reorder_level
+SKU001,Falak Basmati Rice (25kg),15,2026-05-07,50
+SKU002,Mezan Cooking Oil (5L),20,2026-05-07,80
+SKU003,Habib Sugar (1kg),40,2026-05-07,100
+SKU004,Sunridge Chakki Atta Flour (10kg),120,2026-05-07,100
+SKU005,Tapal Danedar Tea (500g),200,2026-05-07,100
+SKU006,National Iodized Salt (1kg),150,2026-05-07,50
+SKU007,Daal Masoor Lentils (1kg),180,2026-05-07,50
+SKU008,White Chana Chickpeas (1kg),90,2026-05-07,60
